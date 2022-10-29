@@ -9,7 +9,21 @@
 </head>
 
 <body>
-    <h1>Hello {{ name }} !</h1>
-    {% block body %}{% endblock %}
+   {% block body %}
+        <h1>liste des instruments</h1>
+        <ul>
+            {% for product in products %}
+
+            <li> 
+                <h2>{{product}}</h2>
+            </li>
+                
+            {% endfor %}
+        </ul>    
+        
+   
+        {% endblock %}
+
 </body>
 </html>
+        
